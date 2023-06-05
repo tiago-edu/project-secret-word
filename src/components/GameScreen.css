@@ -1,0 +1,47 @@
+.wordContainer{
+  display: flex;
+  margin: 1.5em;
+  padding: 1.5em;
+  border: 8px solid black;
+  border-radius: 20px;
+}
+
+
+.letter, .blankSquare{
+  
+  width: 100px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.5; /*alinha o texto dentro do quadrado */
+}
+
+.letterContainer p{
+  margin-bottom: 1.2em;
+}
+
+.letterContainer form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input{
+  height: 50px;
+  width: 40px;
+  margin-right: 1rem;
+  font-size: 2em;
+  text-align: center;
+}
+
+.wrongPickedLetters{
+  letter-spacing: 2px;
+}
