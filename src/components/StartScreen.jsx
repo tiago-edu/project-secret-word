@@ -2,10 +2,8 @@ import React from "react";
 import "./StartScreen.css";
 const StartScreen = ({ startGame }) => {
   return (
-    <>
-    <div class="bg"></div>
-      <div class="bg bg2"></div>
-      <div class="bg bg3"></div>
+  
+    
       <div className="start-screen">
       {/* background */}
       
@@ -24,20 +22,18 @@ O Secret Word é um jogo online viciante que desafia suas habilidades de adivinh
         <li>O objetivo final é adivinhar corretamente a palavra oculta usando o menor número possível de tentativas.</li>
       </ul>
       
-      <div class="container">
-    <div class="center">
-      <button class="btn" onClick={startGame}>
-        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-        </svg>
+      <div className="container">
+    <div className="center">
+      <button className="btn" onClick={startGame}>
         <span>Jogar!</span>
       </button>
     </div>
     </div>
     
   </div>
-    </>
+
+      
+  
       
   );
 };

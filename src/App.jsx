@@ -42,7 +42,6 @@ function App() {
     clearLetterStates();
     
     const { word, category } = pickWordAndCategory();
-    console.log(category, word);
 
     // Criando o array de letras da palavra randomizada
     let arrayLetter = word.split("");
@@ -50,7 +49,6 @@ function App() {
     arrayLetter = arrayLetter.map((l) => l.toLowerCase());
     // o "l" nessa funcao tem a funcao de representar cada elemento do array .map. com ele a gente vai poder acessar cada letra individualmente posteriormente
 
-    console.log(arrayLetter);
     setPickedWord(word);
     setPickedCategory(category);
     setLetters(arrayLetter);
@@ -118,8 +116,7 @@ function App() {
   
   
   useEffect(() => {
-    console.log(uniqueLetters.length)
-    console.log(guessedPickedLetters.length)
+    
     
     
     // condicao de vitoria
@@ -153,6 +150,10 @@ function App() {
   
 
   return (
+    <>
+    <div className="bg"></div>
+    <div className="bg bg2"></div>
+    <div className="bg bg3"></div>
     <div className="App">
       {gameStage === "start" && <StartScreen startGame={startGame} />}
       {gameStage === "game" && (
@@ -169,6 +170,7 @@ function App() {
       )}
       {gameStage === "end" && <EndScreen endGame={endGame} score={score} />}
     </div>
+    </>
   );
 }
 
