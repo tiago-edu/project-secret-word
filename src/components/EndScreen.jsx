@@ -1,10 +1,12 @@
 import React from 'react'
 import './EndScreen.css'
 
-const EndScreen = ({endGame, score}) => {
+const EndScreen = ({endGame, score, pickedWord}) => {
   return (
     <div className='white-container'>
       <h1>Game Over</h1>
+      <h3>a palavra era: "{pickedWord}"</h3>
+      
       <h4 className="points">Sua pontuação foi de: {score} pontos </h4>
 
       {score === 0 && <p>Às vezes, o Secret Word pode ser realmente desafiador. Nem sempre conseguimos acertar a palavra secreta dentro do limite de tentativas. Mas não se preocupe, você pode jogar novamente! O Secret Word é uma ótima maneira de expandir seu vocabulário e exercitar seu pensamento lógico. Continue jogando, aproveite cada partida e verá sua habilidade melhorando gradualmente. Estou torcendo por você!</p>}

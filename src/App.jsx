@@ -168,7 +168,7 @@ function App() {
           score={score}
         />
       )}
-      {gameStage === "end" && <EndScreen endGame={endGame} score={score} />}
+      {gameStage === "end" && <EndScreen endGame={endGame} score={score} pickedWord={pickedWord} />}
     </div>
     </>
   );
